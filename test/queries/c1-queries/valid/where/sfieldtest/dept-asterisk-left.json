@@ -1,0 +1,25 @@
+{
+    "title": "IS: valid dept asterisk left",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_dept": "*aanb"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result":
+        [
+            {"courses_dept":"aanb","courses_avg":87.83},
+            {"courses_dept":"aanb","courses_avg":87.83},
+            {"courses_dept":"aanb","courses_avg":94.44},
+            {"courses_dept":"aanb","courses_avg":94.44}
+        ]
+}

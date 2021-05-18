@@ -1,0 +1,37 @@
+{
+    "title": "Small courses with empty where",
+    "query": {
+        "WHERE": {},
+        "OPTIONS": {
+            "COLUMNS": [
+                "smallcourses_id",
+                "smallcourses_avg"
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {"smallcourses_id":"312","smallcourses_avg":72.82},
+        {"smallcourses_id":"312","smallcourses_avg":72.82},
+        {"smallcourses_id":"312","smallcourses_avg":76.03},
+        {"smallcourses_id":"312","smallcourses_avg":76.03},
+        {"smallcourses_id":"312","smallcourses_avg":74.7},
+        {"smallcourses_id":"312","smallcourses_avg":74.7},
+        {"smallcourses_id":"312","smallcourses_avg":77.17},
+        {"smallcourses_id":"312","smallcourses_avg":77.17},
+        {"smallcourses_id":"312","smallcourses_avg":71.25},
+        {"smallcourses_id":"312","smallcourses_avg":71.25},
+        {"smallcourses_id":"312","smallcourses_avg":76.62},
+        {"smallcourses_id":"312","smallcourses_avg":76.62},
+        {"smallcourses_id":"512","smallcourses_avg":85.2},
+        {"smallcourses_id":"512","smallcourses_avg":85.2},
+        {"smallcourses_id":"254","smallcourses_avg":72.34},
+        {"smallcourses_id":"254","smallcourses_avg":72.34},
+        {"smallcourses_id":"254","smallcourses_avg":84.5},
+        {"smallcourses_id":"254","smallcourses_avg":84.5},
+        {"smallcourses_id":"451","smallcourses_avg":72.35},
+        {"smallcourses_id":"451","smallcourses_avg":72.35},
+        {"smallcourses_id":"451","smallcourses_avg":75.38},
+        {"smallcourses_id":"451","smallcourses_avg":75.38}
+    ]
+}

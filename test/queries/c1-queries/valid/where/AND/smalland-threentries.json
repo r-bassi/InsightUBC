@@ -1,0 +1,42 @@
+{
+    "title": "small and with 3 entries",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "GT": {
+                        "courses_avg": 98.5
+                    }
+                },
+                {
+                    "LT": {
+                        "courses_avg": 99
+                    }
+                },
+                {
+                    "GT": {
+                        "courses_pass": 15
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result":
+    [
+        {"courses_dept":"epse","courses_avg":98.58},
+        {"courses_dept":"epse","courses_avg":98.58},
+        {"courses_dept":"epse","courses_avg":98.76},
+        {"courses_dept":"epse","courses_avg":98.76},
+        {"courses_dept":"epse","courses_avg":98.8},
+        {"courses_dept":"spph","courses_avg":98.98},
+        {"courses_dept":"spph","courses_avg":98.98}
+    ]
+}

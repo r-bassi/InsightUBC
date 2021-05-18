@@ -1,0 +1,212 @@
+{
+    "title": "Complex courses using every possible option, distributed between where and options",
+    "query": {
+        "WHERE": {
+            "OR": [
+                {
+                    "AND": [
+                        {
+                            "AND": [
+                                {
+                                    "GT": {
+                                        "courses_avg": 95
+                                    }
+                                },
+                                {
+                                    "NOT": {
+                                        "LT": {
+                                            "courses_avg": 99
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "IS": {
+                                "courses_dept": "adhe"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "AND": [
+                        {
+                            "AND": [
+                                {
+                                    "EQ": {
+                                        "courses_year": 2015
+                                    }
+                                },
+                                {
+                                    "AND": [
+                                        {
+                                            "IS": {
+                                                "courses_dept": "adhe"
+                                            }
+                                        },
+                                        {
+                                            "AND": [
+                                                {
+                                                    "GT": {
+                                                        "courses_pass": 30
+                                                    }
+                                                },
+                                                {
+                                                    "LT": {
+                                                        "courses_fail": 10
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_audit",
+                "courses_instructor",
+                "courses_title",
+                "courses_uuid",
+                "courses_dept",
+                "courses_id",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result":[
+        {
+            "courses_audit": 0,
+            "courses_instructor": "palacios, carolina",
+            "courses_title": "teach adult",
+            "courses_uuid": "68533",
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg" :78
+        },
+        {
+            "courses_audit": 0,
+            "courses_instructor": "chan, jennifer",
+            "courses_title": "inst adul educ",
+            "courses_uuid": "68535",
+            "courses_dept": "adhe",
+            "courses_id": "328",
+            "courses_avg": 78.09
+        },
+        {
+            "courses_audit": 0,
+            "courses_instructor": "bishundayal, deonarine",
+            "courses_title": "com adult educ",
+            "courses_uuid": "68549",
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 78.94
+        },
+        {
+            "courses_audit": 0,
+            "courses_instructor": "bishundayal, deonarine",
+            "courses_title": "com adult educ",
+            "courses_uuid": "68548",
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg":82.79
+        },
+        {
+            "courses_audit": 0,
+            "courses_instructor": "smulders, dave",
+            "courses_title": "teach adult",
+            "courses_uuid": "68529",
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 83.33
+        },
+        {
+            "courses_audit": 0,
+            "courses_instructor": "smulders, dave",
+            "courses_title": "teach adult",
+            "courses_uuid": "68531",
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 83.91
+        },
+        {
+            "courses_audit": 0,
+            "courses_instructor": "bishundayal, deonarine",
+            "courses_title": "com adult educ",
+            "courses_uuid": "68545",
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 84.42
+        },
+        {
+            "courses_audit": 0,
+            "courses_instructor": "aijazi, omer",
+            "courses_title": "dev wkshp/sem",
+            "courses_uuid": "68542",
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg": 85.03
+        },
+        {
+            "courses_audit": 0,
+            "courses_instructor": "vanwynsberghe, robert",
+            "courses_title": "inst adul educ",
+            "courses_uuid": "68536",
+            "courses_dept": "adhe",
+            "courses_id": "328",
+            "courses_avg": 87.14
+        },
+        {
+            "courses_audit": 0,
+            "courses_instructor": "bishundayal, deonarine",
+            "courses_title": "com adult educ",
+            "courses_uuid": "68550",
+            "courses_dept": "adhe",
+            "courses_id": "330",
+            "courses_avg": 88.03
+        },
+        {
+            "courses_audit": 0,
+            "courses_instructor": "regmi, kapil",
+            "courses_title": "teach adult",
+            "courses_uuid": "68530",
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 89.28
+        },
+        {
+            "courses_audit": 0,
+            "courses_instructor": "regmi, kapil",
+            "courses_title": "teach adult",
+            "courses_uuid": "68532",
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 89.51
+        },
+        {
+            "courses_audit": 0,
+            "courses_instructor": "vanwynsberghe, robert",
+            "courses_title": "adul educ",
+            "courses_uuid": "68557",
+            "courses_dept": "adhe",
+            "courses_id": "412",
+            "courses_avg": 90.16
+        },
+        {
+            "courses_audit": 0,
+            "courses_instructor": "bishundayal, deonarine",
+            "courses_title": "dev wkshp/sem",
+            "courses_uuid": "68543",
+            "courses_dept": "adhe",
+            "courses_id": "329",
+            "courses_avg":90.82
+        }
+    ]
+}
+

@@ -1,0 +1,17 @@
+{
+    "title": "small or incorrect syntax 2",
+    "query": {
+        "WHERE": {
+            "OR":"or"
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

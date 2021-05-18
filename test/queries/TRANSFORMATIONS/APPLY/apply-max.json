@@ -1,0 +1,35 @@
+{
+    "title": "Apply: max",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_dept": "anat"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_id",
+                "overallMax"
+            ],
+            "ORDER": "overallMax"
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_id"
+            ],
+            "APPLY": [
+                {
+                    "overallMax": {
+                        "MAX": "courses_avg"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"courses_id":"392","overallMax":86.29},
+        {"courses_id":"515","overallMax":89.6},
+        {"courses_id":"512","overallMax":91.67},
+        {"courses_id":"511","overallMax":92}
+        ]
+}

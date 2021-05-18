@@ -1,0 +1,35 @@
+{
+    "title": "Apply: min",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_dept": "anat"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_id",
+                "overallMin"
+            ],
+            "ORDER": "overallMin"
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_id"
+            ],
+            "APPLY": [
+                {
+                    "overallMin": {
+                        "MIN": "courses_avg"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"courses_id":"392","overallMin":80.28},
+        {"courses_id":"511","overallMin":83.6},
+        {"courses_id":"515","overallMin":86.67},
+        {"courses_id":"512","overallMin":91.67}
+    ]
+}

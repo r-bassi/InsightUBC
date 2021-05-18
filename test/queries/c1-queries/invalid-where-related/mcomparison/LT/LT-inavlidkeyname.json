@@ -1,0 +1,19 @@
+{
+    "title": "Small LT invalid key name 1",
+    "query": {
+        "WHERE": {
+            "LT": {
+                "courses_wellhi": 35
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

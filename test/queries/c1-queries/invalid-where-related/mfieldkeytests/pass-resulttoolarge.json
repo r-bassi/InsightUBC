@@ -1,0 +1,19 @@
+{
+    "title": "Small LT key:pass, result too large",
+    "query": {
+        "WHERE": {
+            "LT": {
+                "courses_pass": 20000
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "ResultTooLargeError"
+}

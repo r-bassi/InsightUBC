@@ -1,0 +1,35 @@
+{
+    "title": "Apply: avg",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_dept": "anat"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_id",
+                "overallAvg"
+            ],
+            "ORDER": "overallAvg"
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_id"
+            ],
+            "APPLY": [
+                {
+                    "overallAvg": {
+                        "AVG": "courses_avg"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"courses_id":"392","overallAvg":82.73},
+        {"courses_id":"511","overallAvg":87},
+        {"courses_id":"515","overallAvg":88.14},
+        {"courses_id":"512","overallAvg":91.67}
+    ]
+}

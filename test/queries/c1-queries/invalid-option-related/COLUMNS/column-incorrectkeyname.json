@@ -1,0 +1,17 @@
+{
+    "title": "Column: incorrect key naming",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 97
+            }
+        },
+        "OPTIONS": {
+            "COLUMNSHI": [
+                "courses_avg"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result":"InsightError"
+}

@@ -1,0 +1,28 @@
+{
+    "title": "And: incorrect name",
+    "query": {
+        "WHERE": {
+            "SAND": [
+                {
+                    "GT": {
+                        "courses_avg": 98.5
+                    }
+                },
+                {
+                    "LT": {
+                        "courses_avg": 99
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

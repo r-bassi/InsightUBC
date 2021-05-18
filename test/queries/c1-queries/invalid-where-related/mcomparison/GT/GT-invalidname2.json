@@ -1,0 +1,19 @@
+{
+    "title": "Small GT invalid key",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_id": "100"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

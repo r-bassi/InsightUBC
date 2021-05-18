@@ -1,0 +1,23 @@
+{
+    "title": "Apply is string not array",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_dept": "cpsc"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_title"
+            ]
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_dept"
+            ],
+            "APPLY": "wrong"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

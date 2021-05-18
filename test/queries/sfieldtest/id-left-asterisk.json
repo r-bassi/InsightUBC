@@ -1,0 +1,31 @@
+{
+    "title": "IS: valid one asterisk",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_id": "*695"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result":
+        [
+            {"courses_dept":"comm","courses_avg":79.76},
+            {"courses_dept":"comm","courses_avg":79.76},
+            {"courses_dept":"comm","courses_avg":81.95},
+            {"courses_dept":"comm","courses_avg":81.95},
+            {"courses_dept":"comm","courses_avg":84},
+            {"courses_dept":"comm","courses_avg":84},
+            {"courses_dept":"comm","courses_avg":84.36},
+            {"courses_dept":"comm","courses_avg":84.36},
+            {"courses_dept":"comm","courses_avg":86.84},
+            {"courses_dept":"comm","courses_avg":86.84}
+        ]
+}

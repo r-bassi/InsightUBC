@@ -1,0 +1,19 @@
+{
+    "title": "Small LT invalid key name 2, with an skey",
+    "query": {
+        "WHERE": {
+            "LT": {
+                "totallydifferent": "100"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

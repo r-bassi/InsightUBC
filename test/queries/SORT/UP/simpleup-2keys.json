@@ -1,0 +1,46 @@
+{
+    "title": "Simple up, with two 'key's",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "GT": {
+                        "courses_avg": 97
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_dept": "math"
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg",
+                "courses_year"
+            ],
+            "ORDER": {
+                "dir": "UP",
+                "keys": [
+                    "courses_avg",
+                    "courses_year"
+                ]
+            }
+        }
+    },
+    "isQueryValid": true,
+    "result":[
+        {"courses_dept":"math","courses_id":"541","courses_avg":97.09,"courses_year":1900},
+        {"courses_dept":"math","courses_id":"541","courses_avg":97.09,"courses_year":2010},
+        {"courses_dept":"math","courses_id":"525","courses_avg":97.25,"courses_year":1900},
+        {"courses_dept":"math","courses_id":"525","courses_avg":97.25,"courses_year":2016},
+        {"courses_dept":"math","courses_id":"532","courses_avg":97.48,"courses_year":1900},
+        {"courses_dept":"math","courses_id":"532","courses_avg":97.48,"courses_year":2010},
+        {"courses_dept":"math","courses_id":"527","courses_avg":99.78,"courses_year":1900},
+        {"courses_dept":"math","courses_id":"527","courses_avg":99.78,"courses_year":2009}
+    ]
+}
+

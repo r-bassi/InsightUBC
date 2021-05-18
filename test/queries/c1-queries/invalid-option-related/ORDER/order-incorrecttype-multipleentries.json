@@ -1,0 +1,22 @@
+{
+    "title": "ORDER: invalid, incorrect type, multiple entries",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 98
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_uuid"
+            ],
+            "ORDER": [
+                "courses_dept",
+                "courses_uuid"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result":"InsightError"
+}

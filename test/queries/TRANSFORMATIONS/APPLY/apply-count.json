@@ -1,0 +1,36 @@
+{
+    "title": "Apply: count",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_dept": "anat"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_id",
+                "count"
+            ],
+            "ORDER": "count"
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_id"
+            ],
+            "APPLY": [
+                {
+                    "count": {
+                        "COUNT": "courses_instructor"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result":[
+        {"courses_id":"512","count":2},
+        {"courses_id":"392","count":3},
+        {"courses_id":"511","count":3},
+        {"courses_id":"515","count":3}
+    ]
+}

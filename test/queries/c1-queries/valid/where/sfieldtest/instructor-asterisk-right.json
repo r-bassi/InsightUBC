@@ -1,0 +1,32 @@
+{
+    "title": "IS: valid instructor asterisk right",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_instructor": "baniassad, elisa*"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result":
+        [
+            {"courses_dept":"cpsc","courses_id":"210","courses_avg":73.27},
+            {"courses_dept":"cpsc","courses_id":"210","courses_avg":74.17},
+            {"courses_dept":"cpsc","courses_id":"210","courses_avg":76.32},
+            {"courses_dept":"cpsc","courses_id":"310","courses_avg":77.13},
+            {"courses_dept":"cpsc","courses_id":"310","courses_avg":79.12},
+            {"courses_dept":"cpsc","courses_id":"410","courses_avg":79.39},
+            {"courses_dept":"cpsc","courses_id":"410","courses_avg":79.62},
+            {"courses_dept":"cpsc","courses_id":"310","courses_avg":80.35},
+            {"courses_dept":"cpsc","courses_id":"310","courses_avg":81.18},
+            {"courses_dept":"cpsc","courses_id":"210","courses_avg":86.15}
+        ]
+}

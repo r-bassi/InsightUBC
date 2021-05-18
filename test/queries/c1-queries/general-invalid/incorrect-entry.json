@@ -1,0 +1,8 @@
+{
+    "title": "Incorrect query",
+    "query": {
+        "Hey": "hello"
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

@@ -1,0 +1,29 @@
+{
+    "title": "or incorrect entry in 2",
+    "query": {
+        "WHERE": {
+            "OR": [
+                {
+                    "COLUMNS": [
+                        "courses_dept",
+                        "courses_avg"
+                    ]
+                },
+                {
+                    "IS": {
+                        "courses_id": "695"
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

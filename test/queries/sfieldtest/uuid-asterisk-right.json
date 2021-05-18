@@ -1,0 +1,33 @@
+{
+    "title": "IS: valid uuid asterisk right",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_uuid": "1273*"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result":
+        [
+            {"courses_dept":"mech","courses_id":"327","courses_avg":71.36},
+            {"courses_dept":"mech","courses_id":"327","courses_avg":71.52},
+            {"courses_dept":"mech","courses_id":"325","courses_avg":71.77},
+            {"courses_dept":"mech","courses_id":"326","courses_avg":72.24},
+            {"courses_dept":"mech","courses_id":"326","courses_avg":72.24},
+            {"courses_dept":"mech","courses_id":"325","courses_avg":72.6},
+            {"courses_dept":"mech","courses_id":"329","courses_avg":73.31},
+            {"courses_dept":"mech","courses_id":"325","courses_avg":73.48},
+            {"courses_dept":"cpsc","courses_id":"213","courses_avg":74.22},
+            {"courses_dept":"mech","courses_id":"328","courses_avg":83.55},
+            {"courses_dept":"mech","courses_id":"328","courses_avg":83.55}
+        ]
+}

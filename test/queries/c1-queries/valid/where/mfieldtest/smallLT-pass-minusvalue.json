@@ -1,0 +1,19 @@
+{
+    "title": "Small LT avg key",
+    "query": {
+        "WHERE": {
+            "LT": {
+                "courses_pass": -10
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result":[]
+}

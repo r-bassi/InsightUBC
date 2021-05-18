@@ -1,0 +1,9 @@
+{
+    "title": "Empty Options and Where",
+    "query": {
+      "WHERE": {},
+      "OPTIONS": {}
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

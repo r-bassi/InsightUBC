@@ -1,0 +1,19 @@
+{
+    "title": "Invalid, nothing",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "": 97
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "",
+                ""
+            ],
+            "ORDER": ""
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

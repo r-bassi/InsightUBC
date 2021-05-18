@@ -1,0 +1,12 @@
+{
+    "title": "No options with a valid where",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 97
+            }
+        }
+    },
+    "isQueryValid": true,
+    "result": "InsightError"
+}

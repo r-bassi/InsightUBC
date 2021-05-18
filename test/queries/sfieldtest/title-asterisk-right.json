@@ -1,0 +1,26 @@
+{
+    "title": "IS: valid title asterisk right",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_title": "jpn sex\\u0026gend flm*"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result":
+        [
+            {"courses_dept":"asia","courses_id":"254","courses_avg":72.34},
+            {"courses_dept":"asia","courses_id":"254","courses_avg":72.34},
+            {"courses_dept":"asia","courses_id":"254","courses_avg":84.5},
+            {"courses_dept":"asia","courses_id":"254","courses_avg":84.5}
+        ]
+}

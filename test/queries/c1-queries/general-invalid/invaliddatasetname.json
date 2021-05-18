@@ -1,0 +1,19 @@
+{
+    "title": "Invalid dataset name",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "small_courses_avg": 97
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "small_courses_dept",
+                "small_courses_avg"
+            ],
+            "ORDER": "small_courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

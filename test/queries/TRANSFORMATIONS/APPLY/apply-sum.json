@@ -1,0 +1,36 @@
+{
+    "title": "Apply: sum",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_dept": "anat"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_id",
+                "sum"
+            ],
+            "ORDER": "sum"
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_id"
+            ],
+            "APPLY": [
+                {
+                    "sum": {
+                        "SUM": "courses_avg"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result":[
+        {"courses_id":"512","sum":183.34},
+        {"courses_id":"515","sum":352.54},
+        {"courses_id":"511","sum":522},
+        {"courses_id":"392","sum":1489.06}
+    ]
+}

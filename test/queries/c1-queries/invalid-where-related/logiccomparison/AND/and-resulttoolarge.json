@@ -1,0 +1,30 @@
+{
+    "title": "And: result too large",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "GT": {
+                        "courses_avg": 0
+                    }
+                },
+                {
+                    "NOT": {
+                        "IS": {
+                            "courses_dept": "asia"
+                        }
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "ResultTooLargeError"
+}

@@ -1,0 +1,17 @@
+{
+    "title": "COLUMN: invalid, single invalid entry",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 98
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "hi_dept"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result":"InsightError"
+}

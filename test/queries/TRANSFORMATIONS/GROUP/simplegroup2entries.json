@@ -1,0 +1,36 @@
+{
+    "title": "Simple group: group with two entries (avg courses_avg, courses_instructor)",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_dept": "anat"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": ["courses_id", "overallAvg", "courses_instructor"],
+            "ORDER": "overallAvg"
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": ["courses_id", "courses_instructor"],
+            "APPLY": [{
+                "overallAvg": {
+                    "AVG": "courses_avg"
+                }
+            }]
+        }
+    },
+    "isQueryValid": true,
+    "result":[
+        {"courses_id":"392","overallAvg":81.41,"courses_instructor":"ford, donna"},
+        {"courses_id":"392","overallAvg":82.73,"courses_instructor":""},
+        {"courses_id":"392","overallAvg":82.89,"courses_instructor":"alimohammadi, majid"},
+        {"courses_id":"511","overallAvg":84.5,"courses_instructor":"vogl, a wayne"},
+        {"courses_id":"515","overallAvg":86.67,"courses_instructor":"ford, donna"},
+        {"courses_id":"511","overallAvg":87,"courses_instructor":""},
+        {"courses_id":"515","overallAvg":88.14,"courses_instructor":""},
+        {"courses_id":"515","overallAvg":89.6,"courses_instructor":"krebs, claudia"},
+        {"courses_id":"512","overallAvg":91.67,"courses_instructor":"krebs, claudia"},
+        {"courses_id":"512","overallAvg":91.67,"courses_instructor":""},
+        {"courses_id":"511","overallAvg":92,"courses_instructor":"krebs, claudia"}
+    ]
+}

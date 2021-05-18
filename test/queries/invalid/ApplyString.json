@@ -1,0 +1,39 @@
+{
+    "title": "Apply string",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "rooms_furniture": "*Tables*"
+                    }
+                },
+                {
+                    "GT": {
+                        "rooms_seats": 200
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_shortname",
+                "max"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": [
+                    "max"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "rooms_shortname"
+            ],
+            "APPLY": ""
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

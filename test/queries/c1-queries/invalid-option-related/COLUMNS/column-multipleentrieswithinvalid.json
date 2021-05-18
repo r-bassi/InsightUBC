@@ -1,0 +1,20 @@
+{
+    "title": "COLUMN: invalid, multiple entries",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 98
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_",
+                "hi_dept",
+                "courses_id"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result":"InsightError"
+}

@@ -1,0 +1,20 @@
+{
+    "title": "IS: valid instructor",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_instructor": "me"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": []
+}

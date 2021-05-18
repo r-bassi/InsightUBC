@@ -1,0 +1,80 @@
+{
+    "title": "Complex room with every key present.",
+    "query": {
+        "WHERE": {
+            "OR": [
+                {
+                    "AND": [
+                        {
+                            "GT": {
+                                "rooms_seats": 50
+                            }
+                        },
+                        {
+                            "IS": {
+                                "rooms_number": "1001"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "AND": [
+                        {
+                            "IS": {
+                                "rooms_name": "MATH*"
+                            }
+                        },
+                        {
+                            "IS": {
+                                "rooms_furniture": "Classroom-Movable Tablets"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "AND": [
+                        {
+                            "IS": {
+                                "rooms_shortname": "DMP"
+                            }
+                        },
+                        {
+                            "IS": {
+                                "rooms_type": "Small Group"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_seats",
+                "rooms_number",
+                "rooms_furniture",
+                "rooms_name",
+                "rooms_fullname",
+                "rooms_href",
+                "rooms_type",
+                "rooms_shortname",
+                "rooms_address",
+                "rooms_lat",
+                "rooms_lon"
+
+            ],
+            "ORDER": "rooms_seats"
+        }
+    },
+    "isQueryValid": true,
+    "result":[
+        {"rooms_seats":25,"rooms_number":"225","rooms_furniture":"Classroom-Movable Tablets","rooms_name":"MATH_225","rooms_fullname":"Mathematics","rooms_href":"http://students.ubc.ca/campus/discover/buildings-and-classrooms/room/MATH-225","rooms_type":"Small Group","rooms_shortname":"MATH","rooms_address":"1984 Mathematics Road","rooms_lat":49.266463,"rooms_lon":-123.255534},
+        {"rooms_seats":30,"rooms_number":"105","rooms_furniture":"Classroom-Movable Tablets","rooms_name":"MATH_105","rooms_fullname":"Mathematics","rooms_href":"http://students.ubc.ca/campus/discover/buildings-and-classrooms/room/MATH-105","rooms_type":"Open Design General Purpose","rooms_shortname":"MATH","rooms_address":"1984 Mathematics Road","rooms_lat":49.266463,"rooms_lon":-123.255534},
+        {"rooms_seats":30,"rooms_number":"202","rooms_furniture":"Classroom-Movable Tablets","rooms_name":"MATH_202","rooms_fullname":"Mathematics","rooms_href":"http://students.ubc.ca/campus/discover/buildings-and-classrooms/room/MATH-202","rooms_type":"Small Group","rooms_shortname":"MATH","rooms_address":"1984 Mathematics Road","rooms_lat":49.266463,"rooms_lon":-123.255534},
+        {"rooms_seats":30,"rooms_number":"204","rooms_furniture":"Classroom-Movable Tablets","rooms_name":"MATH_204","rooms_fullname":"Mathematics","rooms_href":"http://students.ubc.ca/campus/discover/buildings-and-classrooms/room/MATH-204","rooms_type":"Open Design General Purpose","rooms_shortname":"MATH","rooms_address":"1984 Mathematics Road","rooms_lat":49.266463,"rooms_lon":-123.255534},
+        {"rooms_seats":40,"rooms_number":"101","rooms_furniture":"Classroom-Movable Tables & Chairs","rooms_name":"DMP_101","rooms_fullname":"Hugh Dempster Pavilion","rooms_href":"http://students.ubc.ca/campus/discover/buildings-and-classrooms/room/DMP-101","rooms_type":"Small Group","rooms_shortname":"DMP","rooms_address":"6245 Agronomy Road V6T 1Z4","rooms_lat":49.26125,"rooms_lon":-123.24807},
+        {"rooms_seats":40,"rooms_number":"201","rooms_furniture":"Classroom-Movable Tables & Chairs","rooms_name":"DMP_201","rooms_fullname":"Hugh Dempster Pavilion","rooms_href":"http://students.ubc.ca/campus/discover/buildings-and-classrooms/room/DMP-201","rooms_type":"Small Group","rooms_shortname":"DMP","rooms_address":"6245 Agronomy Road V6T 1Z4","rooms_lat":49.26125,"rooms_lon":-123.24807},
+        {"rooms_seats":65,"rooms_number":"1001","rooms_furniture":"Classroom-Fixed Tables/Movable Chairs","rooms_name":"FSC_1001","rooms_fullname":"Forest Sciences Centre","rooms_href":"http://students.ubc.ca/campus/discover/buildings-and-classrooms/room/FSC-1001","rooms_type":"Case Style","rooms_shortname":"FSC","rooms_address":"2424 Main Mall","rooms_lat":49.26044,"rooms_lon":-123.24886},
+        {"rooms_seats":72,"rooms_number":"1001","rooms_furniture":"Classroom-Hybrid Furniture","rooms_name":"ORCH_1001","rooms_fullname":"Orchard Commons","rooms_href":"http://students.ubc.ca/campus/discover/buildings-and-classrooms/room/ORCH-1001","rooms_type":"Active Learning","rooms_shortname":"ORCH","rooms_address":"6363 Agronomy Road","rooms_lat":49.26048,"rooms_lon":-123.24944},
+        {"rooms_seats":350,"rooms_number":"1001","rooms_furniture":"Classroom-Fixed Tables/Movable Chairs","rooms_name":"LSC_1001","rooms_fullname":"Life Sciences Centre","rooms_href":"http://students.ubc.ca/campus/discover/buildings-and-classrooms/room/LSC-1001","rooms_type":"Tiered Large Group","rooms_shortname":"LSC","rooms_address":"2350 Health Sciences Mall","rooms_lat":49.26236,"rooms_lon":-123.24494}
+    ]
+}

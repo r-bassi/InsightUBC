@@ -1,0 +1,12 @@
+{
+    "title": "IS: invalid keyname, order",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "ORDER": "courses_avg"
+            }
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

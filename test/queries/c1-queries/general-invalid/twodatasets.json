@@ -1,0 +1,19 @@
+{
+    "title": "Two datasets included",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "smallcourses_avg": 97
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "smallcourses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

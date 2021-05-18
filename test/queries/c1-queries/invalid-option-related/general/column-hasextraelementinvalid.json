@@ -1,0 +1,21 @@
+{
+    "title": "Column: invalid,  3rd entry",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 97
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": ["courses_avg"],
+            "ORDER": "courses_avg",
+            "WHERE": {
+                "GT": {
+                    "courses_avg": 97
+                }
+            }
+        }
+    },
+    "isQueryValid": false,
+    "result":"InsightError"
+}

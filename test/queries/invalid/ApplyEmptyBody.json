@@ -1,0 +1,24 @@
+{
+    "title": "Apply empty array body",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_dept": "cpsc"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_title"
+            ]
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_title",
+                "courses_dept"
+            ],
+            "APPLY": [{}]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

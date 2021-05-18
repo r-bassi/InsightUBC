@@ -1,0 +1,19 @@
+{
+    "title": "ORDER: valid key, NOT in columns",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 98
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_depth",
+                "courses_uuid"
+            ],
+            "ORDER": "courses_depth"
+        }
+    },
+    "isQueryValid": false,
+    "result":"InsightError"
+}

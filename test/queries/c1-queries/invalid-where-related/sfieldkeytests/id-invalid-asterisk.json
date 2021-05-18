@@ -1,0 +1,19 @@
+{
+    "title": "IS: invalid, only asterisk",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_id": "*"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "ResultTooLargeError"
+}

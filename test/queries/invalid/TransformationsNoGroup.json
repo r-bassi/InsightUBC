@@ -1,0 +1,45 @@
+{
+    "title": "No Transformations Body",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "GT": {
+                        "courses_avg": 99
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_instructor",
+                "courses_uuid",
+                "courses_title",
+                "courses_avg",
+                "courses_pass",
+                "courses_fail",
+                "courses_audit",
+                "courses_year",
+                "minAvg",
+                "maxAvg"
+            ],
+            "ORDER": {
+                "dir": "UP",
+                "keys": [
+                    "courses_dept"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "APPLY": [
+            {
+                "maxAvg": {
+                    "MAX": "courses_avg"
+                }
+            }
+        ]}
+    },
+    "isQueryValid": false,
+    "result": "InsightError"}

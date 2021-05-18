@@ -1,0 +1,19 @@
+{
+    "title": "IS: invalid key name",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_whynot": "695"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

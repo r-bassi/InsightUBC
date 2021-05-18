@@ -1,0 +1,13 @@
+{
+    "title": "Options: incorrect type",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 97
+            }
+        },
+        "OPTIONS": "courses_dept"
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

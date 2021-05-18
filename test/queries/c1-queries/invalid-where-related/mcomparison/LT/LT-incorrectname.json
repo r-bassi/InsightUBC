@@ -1,0 +1,19 @@
+{
+    "title": "Small LT incorrect name",
+    "query": {
+        "WHERE": {
+            "LET": {
+                "courses_avg": 35
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}
